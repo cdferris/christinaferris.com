@@ -9,4 +9,5 @@ I am an artist, nature lover, and animal rights advocate. For my job, I have lon
 If you would like to reach out, you can contact me via email or follow my updates:
 
 * **Email:** hello@christinaferris.com
-* **LinkedIn:** https://www.linkedin.com/in/christinadawn23/
+**LinkedIn:** [/christinadawn23](https://www.linkedin.com/in/christinadawn23/)
+
