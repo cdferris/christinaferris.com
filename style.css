@@ -6,9 +6,9 @@
 /* Import fonts — add these to your HTML <head> instead if you prefer:
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 */
-@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap');
 
 /* --------------------------------------------------------------------------
    Color palette
