@@ -17,14 +17,14 @@
   --ink-black: #070414;
   --neon-violet: #E400E7;
   --ultrasonic-blue: #300BD6;
-  --lemon-lime: #D7EC36;
+  --honey-bronze: #F2A830;
   --alice-blue: #F1F8F9;
 
   /* Semantic aliases — adjust as your design settles */
   --color-bg: var(--ink-black);
   --color-text: var(--alice-blue);
   --color-heading: var(--neon-violet);
-  --color-link: var(--lemon-lime);
+  --color-link: var(--honey-bronze);
   --color-link-hover: var(--neon-violet);
   --color-accent: var(--ultrasonic-blue);
 
