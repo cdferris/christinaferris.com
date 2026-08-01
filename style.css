@@ -20,7 +20,7 @@
   --honey-bronze: #F2A830;
   --alice-blue: #F1F8F9;
 
-  /* Semantic aliases — adjust as your design settles */
+  /* Semantic aliases */
   --color-bg: var(--ink-black);
   --color-text: var(--alice-blue);
   --color-heading: var(--neon-violet);
@@ -51,19 +51,19 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Page container — constrains line length and adds breathing room
+   Main container
    -------------------------------------------------------------------------- */
 .container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 2rem 3rem;
   box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
   .container {
-    padding: 32px 16px 48px;
+    padding: 2rem 1rem 3rem;
   }
 }
 
