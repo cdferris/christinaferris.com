@@ -21,12 +21,12 @@
   --alice-blue: #F1F8F9;
 
   /* Semantic aliases — adjust as your design settles */
-  --color-bg: var(--alice-blue);
-  --color-text: var(--ink-black);
-  --color-heading: var(--ink-black);
-  --color-link: var(--ultrasonic-blue);
+  --color-bg: var(--ink-black);
+  --color-text: var(--alice-blue);
+  --color-heading: var(--neon-violet);
+  --color-link: var(--lemon-lime);
   --color-link-hover: var(--neon-violet);
-  --color-accent: var(--lemon-lime);
+  --color-accent: var(--ultrasonic-blue);
 
   /* Typography */
   --font-heading: 'Zalando Sans', sans-serif;
