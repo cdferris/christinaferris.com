@@ -8,6 +8,6 @@ Day to day I am an artist, nature lover, and animal rights advocate. My career h
 ## Contact Information
 If you would like to reach out, you can contact me via email or follow my updates:
 
-* **Email:** hello@christinaferris.com
+* **Email:** <a href="mailto:hello@christinaferris.com" style="text-decoration: underline;">hello@christinaferris.com</a>
 - **LinkedIn:** <a href="https://www.linkedin.com/in/christinadawn23/" style="text-decoration: underline;">/christinadawn23</a>
 
