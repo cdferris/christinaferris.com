@@ -1,0 +1,123 @@
+/* ==========================================================================
+   christinaferris.com — Stylesheet
+   Fonts: Zalando Sans (headings), Noto Sans (body)
+   ========================================================================== */
+
+/* Import fonts — add these to your HTML <head> instead if you prefer:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+*/
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap');
+
+/* --------------------------------------------------------------------------
+   Color palette
+   -------------------------------------------------------------------------- */
+:root {
+  --ink-black: #070414;
+  --neon-violet: #E400E7;
+  --ultrasonic-blue: #300BD6;
+  --lemon-lime: #D7EC36;
+  --alice-blue: #F1F8F9;
+
+  /* Semantic aliases — adjust as your design settles */
+  --color-bg: var(--alice-blue);
+  --color-text: var(--ink-black);
+  --color-heading: var(--ink-black);
+  --color-link: var(--ultrasonic-blue);
+  --color-link-hover: var(--neon-violet);
+  --color-accent: var(--lemon-lime);
+
+  /* Typography */
+  --font-heading: 'Zalando Sans', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Headings
+   H1: Zalando Sans, weight 700, 64px
+   H2–H6 scaled down proportionally, still weight 700
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-link-hover);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Lists
+   -------------------------------------------------------------------------- */
+ul, ol {
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive scaling for smaller screens
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 26px; }
+  h4 { font-size: 22px; }
+  h5 { font-size: 19px; }
+  h6 { font-size: 17px; }
+}
