@@ -97,55 +97,61 @@ body {
    Navigation Header
    ========================================================================== */
 .site-nav {
+  display: flex;
+  justify-content: space-between; /* Pushes list left and logo right */
+  align-items: center;
+  
   position: sticky;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  box-sizing: border-box;
   z-index: 1000;
   
-  display: flex;
-  align-items: center; /* Vertically aligns links and logo */
-  padding: 1.5rem 2rem;
-  
+  padding: 1.25rem 2rem;
   background-color: rgba(48, 11, 214, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Left-aligned menu links container */
-.nav-links {
+/* Semantic list menu */
+.site-nav .nav-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;          /* Spacing between HOME and ABOUT */
+  list-style: none;     /* Removes bullets */
+  margin: 0;            /* Removes list margins */
+  padding: 0;           /* Removes list indent */
 }
 
-.nav-links a {
-  color: var(--color-text);
+/* Menu link styling */
+.site-nav .nav-menu a {
+  color: #FFFFFF;
   text-decoration: none;
-  font-family: var(--font-body);
+  font-family: var(--font-body, sans-serif);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible {
-  color: var(--color-link-hover);
+.site-nav .nav-menu a:hover,
+.site-nav .nav-menu a:focus-visible {
+  color: var(--color-link-hover, #E400E7);
 }
 
-/* Right-aligned text logo */
-.site-logo {
-  margin-left: auto; /* Pushes logo to the far right edge */
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+/* Right side text logo styling */
+.site-nav .site-logo {
   color: #FFFFFF;
   text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
 }
 
-.site-logo:hover {
-  opacity: 0.9;
+.site-nav .site-logo:hover {
+  opacity: 0.85;
 }
 
 /* Homepage hero */
