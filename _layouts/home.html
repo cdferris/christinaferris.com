@@ -1,0 +1,26 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christina Ferris</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body class="home-page">
+  {% include nav.html %}
+  <div class="hero" id="hero"></div>
+
+  <script>
+    const heroImages = [
+      '/assets/images/hero/photo-1.jpg',
+      '/assets/images/hero/photo-2.jpg',
+      '/assets/images/hero/photo-3.jpg'
+    ];
+    const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
+    document.getElementById('hero').style.backgroundImage = `url('${chosen}')`;
+  </script>
+</body>
+</html>
