@@ -114,13 +114,25 @@ body {
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Semantic list menu */
+/* Remove bullets and reset margins on the list */
+.site-nav ul.nav-menu,
 .site-nav .nav-menu {
-  display: flex;
-  gap: 1.5rem;          /* Spacing between HOME and ABOUT */
-  list-style: none;     /* Removes bullets */
-  margin: 0;            /* Removes list margins */
-  padding: 0;           /* Removes list indent */
+  display: flex !important;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure individual list items don't show bullets or wrap vertically */
+.site-nav .nav-menu li {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 /* Menu link styling */
