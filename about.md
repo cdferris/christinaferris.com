@@ -1,7 +1,8 @@
 ---
 layout: default
+title: About
+permalink: /about/
 ---
-
 # Christina Ferris
 
 Welcome. I'm re-designing my site at the moment, so consider this a placeholder. 
