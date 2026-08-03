@@ -164,3 +164,22 @@ li:last-child {
   h5 { font-size: 19px; }
   h6 { font-size: 17px; }
 }
+/* Focus states — visible keyboard focus in honey-bronze */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--honey-bronze);
+  outline-offset: 2px;
+}
+
+/* Screen-reader-only content that's visually hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
