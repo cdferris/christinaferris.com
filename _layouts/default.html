@@ -8,10 +8,16 @@
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
+  <!-- 1. Add skip link as the very first item inside <body> -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   {% include nav.html %}
-  <main class="container">
+
+  <!-- 2. Target the main element with the id and tabindex -->
+  <main id="main-content" tabindex="-1" class="container">
     {{ content }}
   </main>
+
   <footer>
     <p>&copy; Christina Ferris</p>
   </footer>
