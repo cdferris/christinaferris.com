@@ -1,6 +1,6 @@
 /* ==========================================================================
    christinaferris.com — Stylesheet
-   Fonts: Zalando Sans (headings), Noto Sans (body)
+   Fonts: DM Sans (headings), Noto Sans (body)
    ========================================================================== */
 
 /* Import fonts — add these to your HTML <head> instead if you prefer:
@@ -93,41 +93,59 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Top navigation old */
+/* ==========================================================================
+   Navigation Header
+   ========================================================================== */
 .site-nav {
-  /* Positioning & Layering */
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-
-  /* Layout & Spacing */
+  
   display: flex;
-  gap: 2rem;
+  align-items: center; /* Vertically aligns links and logo */
   padding: 1.5rem 2rem;
-
-  /* Typography */
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-  /* Color & Effects */
+  
   background-color: rgba(48, 11, 214, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-.site-nav a {
+/* Left-aligned menu links container */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
   color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--color-link-hover);
+}
+
+/* Right-aligned text logo */
+.site-logo {
+  margin-left: auto; /* Pushes logo to the far right edge */
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus-visible {
-  color: var(--color-link-hover);
+.site-logo:hover {
+  opacity: 0.9;
 }
 
 /* Homepage hero */
