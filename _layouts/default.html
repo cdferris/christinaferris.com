@@ -2,14 +2,18 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christina Ferris</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
-  <div class="container">
+  {% include nav.html %}
+  <main class="container">
     {{ content }}
-  </div>
+  </main>
+  <footer>
+    <p>&copy; Christina Ferris</p>
+  </footer>
 </body>
 </html>
