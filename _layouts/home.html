@@ -11,16 +11,23 @@
 </head>
 <body class="home-page">
   {% include nav.html %}
-  <div class="hero" id="hero"></div>
+  <main>
+    <img class="hero" id="hero" src="" alt="">
+  </main>
+  <footer class="visually-hidden">
+    <p>Christina Ferris</p>
+  </footer>
 
   <script>
     const heroImages = [
-      '/assets/images/hero/photo-1.jpg',
-      '/assets/images/hero/photo-2.jpg',
-      '/assets/images/hero/photo-3.jpg'
+      { src: '/assets/images/hero/photo-1.jpg', alt: 'Describe this photo here' },
+      { src: '/assets/images/hero/photo-2.jpg', alt: 'Describe this photo here' },
+      { src: '/assets/images/hero/photo-3.jpg', alt: 'Describe this photo here' }
     ];
     const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
-    document.getElementById('hero').style.backgroundImage = `url('${chosen}')`;
+    const hero = document.getElementById('hero');
+    hero.src = chosen.src;
+    hero.alt = chosen.alt;
   </script>
 </body>
 </html>
