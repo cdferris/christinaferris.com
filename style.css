@@ -258,7 +258,7 @@ body.home-page .site-nav a {
 /* Adjusts Photo 2 specifically on mobile screens */
 @media (max-width: 768px) {
   .hero-wrapper img[src*="photo-2.jpg"] {
-    object-position: 90% center !important;
+    object-position: 85% center !important;
   }
     .hero-wrapper img[src*="photo-26.jpg"] {
     object-position: 10% center !important;
