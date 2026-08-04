@@ -269,9 +269,15 @@ body.home-page .site-nav a {
     .hero-wrapper img[src*="photo-7.jpg"] {
     object-position: 37% center !important;
   }
+    .hero-wrapper img[src*="photo-17.jpg"] {
+    object-position: 43% center !important;
+  }
+      .hero-wrapper img[src*="photo-31.jpg"] {
+    object-position: 30% center !important;
+  }
   .hero-wrapper img[src*="photo-24.jpg"] {
    object-fit: cover !important; /* Forces image to fill the screen */
-    object-position: 45% 25% !important; /* Pulls the top crop down by 25% */
+    object-position: 40% 25% !important; /* Pulls the top crop down by 25% */
   }
 }
 }
