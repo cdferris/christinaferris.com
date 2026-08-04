@@ -215,30 +215,6 @@ body.home-page .site-nav a {
   margin: 0;
 }
 
-/* Base default for ALL hero photos */
-.hero-wrapper img,
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center; /* Default center-crop */
-}
-
-/* Specific adjustment for Desktop */
-.hero-img.photo-2 {
-  object-position: 75% 50%; /* Shifts focal point horizontally or vertically */
-}
-
-/* Specific adjustment for Mobile screens */
-@media (max-width: 768px) {
-  .hero-img.photo-2 {
-    object-position: 50% 100% 
-  }
-   .hero-img.photo-26 {
-    object-position: 50% 0% 
-  }
-}
-
 @keyframes hero-fade-in {
   to { opacity: 1; }
 }

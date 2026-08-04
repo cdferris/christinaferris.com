@@ -24,7 +24,7 @@
 <script>
   const heroImages = [
     { src: '/assets/images/hero/photo-1.jpg', alt: 'Purple desert flowers; taken in Tucson Arizona', caption: 'Purple desert flowers; Tucson Arizona' },
-    { src: '/assets/images/hero/photo-2.jpg', alt: 'Crow on a windy day, perched on a wooden fence; taken in Portland Oregon', caption: 'Crow on a windy day; @2014 Portland, Oregon', position: 'photo-2' },
+    { src: '/assets/images/hero/photo-2.jpg', alt: 'Crow on a windy day, perched on a wooden fence; taken in Portland Oregon', caption: 'Crow on a windy day; @2014 Portland, Oregon' },
     { src: '/assets/images/hero/photo-3.jpg', alt: 'Overlooking the Avon in Bath, U.K.; a rainbow in the distance', caption: 'Overlooking the Avon in Bath, U.K. @2015' },
     { src: '/assets/images/hero/photo-4.jpg', alt: 'My German Shepherd dog, Nadja, smiling with big perky ears, reflected in the sideview mirror of the car, sunset sky behind her', caption: 'Almost there @2012 Tucson, Arizona' },
     { src: '/assets/images/hero/photo-5.jpg', alt: 'My husband and my dog, small silhouettes at Cannon Beach, Oregon', caption: 'Cannon Beach, Oregon @2013' },
@@ -47,7 +47,7 @@
     { src: '/assets/images/hero/photo-23.jpg', alt: 'The Avon and a vine covered wall in Bradford on Avon, Wiltshire, circa 2015', caption: 'Bradford on Avon, Wiltshire, circa 2015' },
     { src: '/assets/images/hero/photo-24.jpg', alt: 'One of my wild crow-friends in Portland, Oregon in my back yard with dandelions surrounding the, looking sceptically at the camera', caption: 'I will remember you; @2014-2019' },
     { src: '/assets/images/hero/photo-25.jpg', alt: 'Dreamy clouds at sunset; pink tinted on a light blue sky; Tuscon, Arizona circa early 2000s', caption: 'Tuscon, Arizona; early 2000s' },
-    { src: '/assets/images/hero/photo-26.jpg', alt: 'Abandoned adobe building, white wash flaking off, retro cocktail lounge sign over a light blue door circa early 2000s somewhere in Arizona', caption: 'Somewhere in Arizona', position: 'photo-26' },
+    { src: '/assets/images/hero/photo-26.jpg', alt: 'Abandoned adobe building, white wash flaking off, retro cocktail lounge sign over a light blue door circa early 2000s somewhere in Arizona', caption: 'Somewhere in Arizona' },
     { src: '/assets/images/hero/photo-27.jpg', alt: 'Devon sunset; Gradient sky top dark blue to yellow and pink at horizon; dark black flat land', caption: 'Near Dorchester, Dorset @2022' },
     { src: '/assets/images/hero/photo-28.jpg', alt: 'Oregon coast, sunlight bursting from behind a cliff on the ocean, nostalgic-feeling', caption: 'Somewhere on the Oregon coast @2014-2019' },
     { src: '/assets/images/hero/photo-31.jpg', alt: '3 old phone booths and an air compressor; taken in Tucson Arizona circa early 2000s', caption: 'Tucson Arizona; early 2000s' },
@@ -56,20 +56,11 @@
     { src: '/assets/images/hero/photo-37.jpg', alt: 'Looking up at tall winter trees against a blue sky, Frome, Somerset', caption: 'Winter trees Frome, Somerset @2022 ' },
     { src: '/assets/images/hero/photo-39.jpg', alt: 'A young cat staring straight on, ready to pounce, black and white noir-style image ', caption: 'Thunder; @2022' }
   ];
-const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
+  const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
   const hero = document.getElementById('hero');
-
-  if (hero) {
-    hero.src = chosen.src;
-    hero.alt = chosen.alt;
-    // Safely sets custom class IF position exists, otherwise applies base class
-    hero.className = chosen.position ? `hero-img ${chosen.position}` : 'hero-img';
-  }
-
-  const caption = document.getElementById('hero-caption');
-  if (caption) {
-    caption.textContent = chosen.caption;
-  }
+  hero.src = chosen.src;
+  hero.alt = chosen.alt;
+  document.getElementById('hero-caption').textContent = chosen.caption;
 </script>
 </body>
 </html>
