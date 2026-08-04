@@ -271,7 +271,7 @@ body.home-page .site-nav a {
   }
   .hero-wrapper img[src*="photo-24.jpg"] {
    object-fit: cover !important; /* Forces image to fill the screen */
-    object-position: center 25% !important; /* Pulls the top crop down by 25% */
+    object-position: 45% 25% !important; /* Pulls the top crop down by 25% */
   }
 }
 }
