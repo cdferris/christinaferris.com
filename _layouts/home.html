@@ -23,21 +23,21 @@
 
 <script>
   const heroImages = [
-    { src: '/assets/images/hero/photo-1.jpg', alt: 'Purple desert flowers; taken in Tucson Arizona', caption: 'Purple desert flowers; Tucson Arizona' },
+    { src: '/assets/images/hero/photo-1.jpg', alt: 'Purple desert flowers; taken in Tucson Arizona', caption: 'Desert flowers; Tucson Arizona' },
     { src: '/assets/images/hero/photo-2.jpg', alt: 'Crow on a windy day, perched on a wooden fence; taken in Portland Oregon', caption: 'Crow on a windy day; @2014 Portland, Oregon' },
     { src: '/assets/images/hero/photo-3.jpg', alt: 'Overlooking the Avon in Bath, U.K.; a rainbow in the distance', caption: 'Overlooking the Avon in Bath, U.K. @2015' },
     { src: '/assets/images/hero/photo-4.jpg', alt: 'My German Shepherd dog, Nadja, smiling with big perky ears, reflected in the sideview mirror of the car, sunset sky behind her', caption: 'Almost there @2012 Tucson, Arizona' },
     { src: '/assets/images/hero/photo-5.jpg', alt: 'My husband and my dog, small silhouettes at Cannon Beach, Oregon', caption: 'Cannon Beach, Oregon @2013' },
     { src: '/assets/images/hero/photo-6.jpg', alt: 'A friend running at White Sands, New Mexico; large diagnol white cloud on a blue sky mirrors the white sand; cira 1998', caption: 'White Sands, New Mexico @1998' },
-    { src: '/assets/images/hero/photo-7.jpg', alt: 'A hotel in Otovalo, Ecudador, sign reads: Residential El Roco; next to the sign on a flat roof stands a golden coloured dog, looking at the camera', caption: 'Otovalo, Ecuador @1996' },
+    { src: '/assets/images/hero/photo-7.jpg', alt: 'A hotel in Otovalo, Ecudador, sign reads: Residential El Roco; next to the sign on a flat roof stands a golden-coloured dog, looking at the camera', caption: 'Otovalo, Ecuador @1996' },
     { src: '/assets/images/hero/photo-8.jpg', alt: 'A silhouette of a crow on a thick cable, just getting ready to launch into flight, cool winter sky and trees behind', caption: 'Winter crow, Portland, Oregon @2014' },
     { src: '/assets/images/hero/photo-9.jpg', alt: 'New York City skyline behind a layer of winter trees, from Central Park, a river and path in the foreground, on a clear winter day, December 2001', caption: 'Central Park, New York December 2001' },
-    { src: '/assets/images/hero/photo-10.jpg', alt: 'Looking down a residential street in Bogotá, Colombia circa 1996, a small child peers through a barred window', caption: 'Bogotá, Colombia @1996' },
+    { src: '/assets/images/hero/photo-10.jpg', alt: 'Looking down a residential street in Bogotá, Colombia circa 1996, a small child peers through a barred window', caption: 'Residential street, Bogotá, Colombia @1996' },
     { src: '/assets/images/hero/photo-11.jpg', alt: 'A red Border Collie carrying a mangled monkey toy by its arm, scene from a dog park in Tucson, Arizona circa 2007', caption: 'At the dog park, Tucson, Arizona @2007' },
-    { src: '/assets/images/hero/photo-12.jpg', alt: 'From afar: the Capaliano Suspension Bridge, surrounded by giant evergreen trees and a river below; Vancouver, British Columbia, Canada', caption: 'Vancouver, British Columbia @2003' },
+    { src: '/assets/images/hero/photo-12.jpg', alt: 'From afar: the Capaliano Suspension Bridge, surrounded by giant evergreen trees and a river below; Vancouver, British Columbia, Canada', caption: 'Capaliano suspension bridge,Vancouver, British Columbia @2003' },
     { src: '/assets/images/hero/photo-13.jpg', alt: 'View of St Michaels Mount Gardens, Penzance, Cornwall circa 2015', caption: 'St Michaels Mount Gardens, Penzance, Cornwall @2015' },
     { src: '/assets/images/hero/photo-14.jpg', alt: 'Post Alley, Seattle, Washington circa 2003', caption: 'Post Alley, Seattle, Washington @2003' },
-    { src: '/assets/images/hero/photo-16.jpg', alt: 'Community Billboard sign cluster, main sign says: Thieves please return lights; other signs list names and businesses. Mini American flags top the signs', caption: 'Somewhere in Arizona' },
+    { src: '/assets/images/hero/photo-16.jpg', alt: 'Community Billboard sign cluster, main sign says: Thieves please return lights; other signs list names and businesses. Mini American flags top the signs', caption: 'Message for thieves; Somewhere in Arizona' },
     { src: '/assets/images/hero/photo-17.jpg', alt: 'Three old friends on an abandoned railroad track in Otavalo, Ecuador circa 1996', caption: 'Otavalo, Ecuador @1996' },
     { src: '/assets/images/hero/photo-18.jpg', alt: 'Three shadows on pavement, the other two hands show peace signs; me and my little sisters, circa early 2000s', caption: 'Us, basically; early 2000s' },
     { src: '/assets/images/hero/photo-19.jpg', alt: 'Skyline of Vancouver, British Columbia from a path near the water; large stones on a bed of pebbles line the edge of the river', caption: 'Vancouver, British Columbia @2003' },
@@ -53,7 +53,7 @@
     { src: '/assets/images/hero/photo-31.jpg', alt: '3 old phone booths and an air compressor; taken in Tucson Arizona circa early 2000s', caption: 'Tucson Arizona; early 2000s' },
     { src: '/assets/images/hero/photo-34.jpg', alt: 'Long shadows holding hands on a grassy hill in Avebury, Wiltshire', caption: 'Avebury, Wiltshire, @2021' },
     { src: '/assets/images/hero/photo-36.jpg', alt: 'Bluebells in the wood, Wells, Somerset', caption: 'Bluebells in the wood, Wells, Somerset @2015' },
-    { src: '/assets/images/hero/photo-37.jpg', alt: 'Looking up at tall winter trees against a blue sky, Frome, Somerset', caption: 'Winter trees Frome, Somerset @2022 ' },
+    { src: '/assets/images/hero/photo-37.jpg', alt: 'Looking up at tall winter trees against a blue sky, Frome, Somerset', caption: 'Winter trees, Frome, Somerset @2022 ' },
     { src: '/assets/images/hero/photo-39.jpg', alt: 'A young cat staring straight on, ready to pounce, black and white noir-style image ', caption: 'Thunder; @2022' }
   ];
   const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
