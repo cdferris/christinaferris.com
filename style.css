@@ -197,10 +197,21 @@ body.home-page .site-nav a {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
-  font-family: var(--font-body);
+  z-index: 10;
+  
+  /* Fits the container tightly around the text */
+  width: fit-content;
+  max-width: calc(100% - 3rem);
+  
+  /* Translucent dark background box */
+  background-color: rgba(7, 4, 20, 0.85);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  
+  /* Typography */
+  font-family: var(--font-body, sans-serif);
   font-size: 0.75rem;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
   margin: 0;
 }
 
