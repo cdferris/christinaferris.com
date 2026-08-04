@@ -258,17 +258,22 @@ body.home-page .site-nav a {
 /* Adjusts Photo 2 specifically on mobile screens */
 @media (max-width: 768px) {
   .hero-wrapper img[src*="photo-2.jpg"] {
-    object-position: 85% center !important;
+    object-position: 80% center !important;
   }
     .hero-wrapper img[src*="photo-26.jpg"] {
     object-position: 10% center !important;
   }
     .hero-wrapper img[src*="photo-10.jpg"] {
-    object-position: 30% center !important;
+    object-position: 35% center !important;
   }
     .hero-wrapper img[src*="photo-7.jpg"] {
-    object-position: 40% center !important;
+    object-position: 37% center !important;
   }
+  .hero-wrapper img[src*="photo-24.jpg"] {
+   object-fit: cover !important; /* Forces image to fill the screen */
+    object-position: center 25% !important; /* Pulls the top crop down by 25% */
+  }
+}
 }
 
 /* --------------------------------------------------------------------------
