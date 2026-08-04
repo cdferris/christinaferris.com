@@ -187,6 +187,23 @@ body.home-page .site-nav a {
   animation: hero-fade-in 1.2s ease forwards;
 }
 
+.hero-wrapper {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+}
+
+.hero-caption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
 @keyframes hero-fade-in {
   to { opacity: 1; }
 }
