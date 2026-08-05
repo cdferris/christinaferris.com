@@ -298,6 +298,12 @@ p {
   margin: 0 0 1.25em;
 }
 
+footer p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --------------------------------------------------------------------------
    Headings
    H1: Zalando Sans, weight 700, 64px
